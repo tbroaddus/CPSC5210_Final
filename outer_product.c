@@ -127,13 +127,12 @@ int main(int argc, char* argv[]) {
   // End of execution, get end time
   const double end = MPI_Wtime();
 
- 
+ /**
   MPI_Barrier(MPI_COMM_WORLD);
   sleep(1 * rank);
   printf("Rank: %d\n", rank);
   printMatrix("Partial C", Final, c_rows, c_cols);
-  printMatrix("Partial C", C, c_rows, c_cols);
-
+**/
 
   
   
